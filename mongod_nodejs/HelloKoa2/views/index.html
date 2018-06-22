@@ -1,0 +1,27 @@
+<script>
+  function changeVl(url){
+      document.getElementById('formSubmit').action = url
+      // alert(document.getElementById('formSubmit').action)
+  }
+</script>
+<h1>YML Demo</h1>
+      <form id="formSubmit" method="POST" action="">
+        <p>位置</p>
+        <input name="位置" /><br/>
+        <p>覆盖企业数</p>
+        <input name="覆盖企业数" /><br/>
+        <p>园区年产值</p>
+        <input name="园区年产值" /><br/>
+        <p>员工数</p>
+        <input name="员工数" /><br/>
+        <p>办公空间面积</p>
+        <input name="办公空间面积" /><br/>
+        <p>订单量</p>
+        <input name="订单量" /><br/>
+        <p>已租赁</p>
+        <input name="已租赁" /><br/>
+        <button type="submit" onclick="changeVl('/test/users/add')">add</button>
+        <button type="submit" onclick="changeVl('/test/users/update')">update</button>
+        <button type="submit" onclick="changeVl('/test/users/delete')">delete</button>
+        <button type="submit" onclick="changeVl('/test/users/find')">find</button>
+      </form>
